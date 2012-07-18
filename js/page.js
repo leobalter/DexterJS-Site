@@ -50,6 +50,8 @@ function init() {
     return false;
   }
 
+  // Twitter Button
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.async=true;js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"));
 }
 
 function setEvent( element, name, callback ) {
