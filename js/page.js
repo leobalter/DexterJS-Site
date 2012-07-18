@@ -6,7 +6,8 @@ function init() {
 
   for ( pillsLength = pills.length ; i < pillsLength ; i++ ) {
     pill = pills[ i ];
-    setEvent( pill, 'click', activatePill );
+    setEvent( pill, 'DOMActivate', activatePill );
+    setEvent( pill, 'touchstart', activatePill );
   }
 
   function setTabs( showThis, activeRE ) {
