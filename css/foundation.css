@@ -309,7 +309,6 @@ a.pill {
 }
 a.pill.active { 
   outline: none;
-  cursor: default; 
   font-weight: bold;
   background-color: #2ba6cb; 
   border: none; 
