@@ -6,137 +6,149 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 
-  <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
-  <meta name="description" content="A very simple Test Helper, framework independent.">
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="A very simple Test Helper, framework independent.">
 
-  <title>Dexter JS</title>
+    <title>DexterJS</title>
 
-  <!-- Included CSS Files -->
-  <link rel="stylesheet" href="css/foundation.css">
+    <!-- Included CSS Files -->
+    <link rel="stylesheet" href="css/foundation.css">
 
-  <!-- IE Fix for HTML5 Tags -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
 </head>
 <body>
-
-  <div class="row">
-    <div class="twelve columns">
-      <h1>Dexter JS</h1>
-      <p>A very simple Test Helper, framework independent.</p>
-      <hr />
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="eight columns">
-      <h2>How it works</h2>
-
-      <!-- Grid Example -->
-      <div class="row">
+    <div class="row">
         <div class="twelve columns">
-          <div class="panel">
-            <p>Dexter is a Test Helper. With Dexter, you can spy functions and create stubs to prevent their default functionality and set callbacks to create your assertions.</p>
-
-            <p>It's like Sinon.JS, but this is VERY simple. The goal is to keep it simple and clean.</p>
-          </div>
+            <h1>DexterJS</h1>
+            <p>A very simple Test Helper, framework independent.</p>
+            <hr />
         </div>
-      </div>
-
-
-      <h2>Getting Started</h2>
-      <p>Download <a href="https://github.com/leobalter/DexterJS/blob/master/dist/Dexter.min.js">Dexter.min.js</a> and include it in your JavaScript test environment.</p>
-
-      <h3>Documentation</h3>
-      <ul class="tabs">
-        <li class="tab_item">
-          <a class="pill active" href="https://github.com/leobalter/DexterJS/wiki">Dexter Wiki</a>
-        </li>
-        <li class="tab_item">
-          <a class="pill active" href="https://github.com/leobalter/DexterJS/wiki/Dexter.spy">Spy</a>
-        </li>
-        <li class="tab_item">
-          <a class="pill active" href="https://github.com/leobalter/DexterJS/wiki/Dexter.stub">Stub</a>
-        </li>
-        <li class="tab_item">
-          <a class="pill active" href="https://github.com/leobalter/DexterJS/wiki/Dexter.fakeXHR">fakeXHR</a>
-        </li>
-      </ul>
-
-      <div class="tab_content hide"></div>
-
-      <h4>Thanks!</h4>
-
-      <p>DexterJS wouldn´t be possible without all the support from <a href="http://www.estantevirtual.com.br">Estante Virtual</a> (pt_BR).</p>
-      <p>Special thanks to <a href="http://twitter.com/rwaldron">Rick Waldron</a> for doing the first code review.</p>
-
     </div>
 
-    <div class="four columns">
-      <h4>Share!</h4>
-      <p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dexterjs.com" data-hashtags="DexterJS">Tweet</a></p>
-    
-      
-      <h4>Other Resources</h4>
-      <p>Dexter is licensed under the MIT and GPL licenses, and it's hosted in Github. Below are some interesting links you might want to know.</p>
-      <ul class="disc">
-        <li><a href="https://github.com/leobalter/DexterJS">Dexter JS on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-        <li><a href="https://github.com/leobalter/DexterJS/issues">Issues Tracker</a></li>
-        <li>Author's Twitter: <a href="http://twitter.com/leobalter">@leobalter</a></li>
-      </ul>
-      <div class="hide" id="collaborators">
-          <h4>Collaborators</h4>
-          <ul class="disc">
-          
+    <div class="row">
+        <div class="eight columns">
+            <h2>How it works</h2>
 
-          </ul>
-      </div>
+            <!-- Grid Example -->
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="panel">
+                        <p>Dexter is a Test Helper. With Dexter, you can mock functions by spying and faking to prevent their default functionality and set callbacks to create your assertions.</p>
 
-      <div class="hide" id="repoInfo">
-          <h4>Other Repo Info</h4>
-          <ul class="disc">
-          
+                        <p>It's VERY simple to use and it doesn't mess with your JS environment. The goal is to keep it simple and clean.</p>
 
-          </ul>
-      </div>
+                        <p>It works both on Browser and Node environments, although if you run on it on a Browser, it will allow you to fake the XHR object, doing so you get control of your Ajax required tests to improve them for speed.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>Getting Started</h2>
+            <p>Download <a href="https://github.com/leobalter/DexterJS/blob/master/dist/dexter.min.js">dexter.min.js</a> and include it in your JavaScript test environment.</p>
+
+            <h3>NPM</h3>
+            <p>You can install Dexter via NPM.</p>
+
+            <pre>npm install --save-dev dexter</pre>
+
+            <h3>Bower</h3>
+            <p>You can install Dexter via Bower</p>
+
+            <pre>bower install dexter</pre>
+
+            <h3>Coverage</h3>
+
+            <p>In an effort to maintain Dexter a reliable tool for JS tests, we keep the min coverage threshold on at least <a href="coverage/index.html">80% of the code</a>.</p>
+
+            <h3>Documentation</h3>
+
+            <p>Checkout the <a href="docs/index.html">documentation</a>. They are generated with <a href="https://github.com/millermedeiros/mdoc">MDOC</a>.</p>
+
+            <p>You can jump directly to the Dexter main functions:</p>
+
+            <ul class="tabs">
+                <li class="tab_item">
+                    <a class="pill active" href="docs/methods/spy.html">spy</a>
+                </li>
+                <li class="tab_item">
+                    <a class="pill active" href="docs/methods/fake.html">fake</a>
+                </li>
+                <li class="tab_item">
+                    <a class="pill active" href="docs/methods/fakeXHR.html">fakeXHR</a>
+                </li>
+                <li class="tab_item">
+                    <a class="pill active" href="docs/methods/restore.html">restore</a>
+                </li>
+            </ul>
+
+            <div class="tab_content hide"></div>
+
+            <h4>Thanks!</h4>
+
+            <p>DexterJS wouldn´t be possible without all the support from <a href="http://www.estantevirtual.com.br">Estante Virtual</a> (pt_BR) and it's <a href="https://github.com/leobalter/DexterJS/graphs/contributors">contributors</a>!</p>
+
+        </div>
+
+        <div class="four columns">
+            <h4>Share!</h4>
+            <p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dexterjs.com" data-hashtags="DexterJS">Tweet</a></p>
+
+            <h4>Other Resources</h4>
+            <p>Dexter is licensed under the MIT and GPL licenses, and it's hosted in Github. Below are some interesting links you might want to know.</p>
+            <ul class="disc">
+                <li><a href="https://github.com/leobalter/DexterJS">DexterJS on Github</a><br/>Latest code, issue reports, feature requests and more.</li>
+                <li><a href="https://github.com/leobalter/DexterJS/issues">Issues Tracker</a></li>
+                <li>Author's Twitter: <a href="http://twitter.com/leobalter">@leobalter</a></li>
+            </ul>
+            <div class="hide" id="collaborators">
+                    <h4>Collaborators</h4>
+                    <ul class="disc"></ul>
+            </div>
+
+            <div class="hide" id="repoInfo">
+                    <h4>Other Repo Info</h4>
+                    <ul class="disc"></ul>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <hr/>
+    <hr/>
 
-  <footer class="row">
-    <div class="twelve columns">
-      <h4>Contributing</h4>
-      <ol>
-        <li>In lieu of a formal styleguide, take care to maintain the existing coding style and please do follow <a href="https://github.com/rwldrn/idiomatic.js">idiomatic.js</a>.</li>
-        <li>Add unit tests for any new or changed functionality.</li>
-        <li>Lint and test your code using <a href="https://github.com/cowboy/grunt">grunt</a>.</li>
-      </ol>
+    <footer class="row">
+        <div class="twelve columns">
+            <h4>Contributing</h4>
+            <ol>
+                <li>In lieu of a formal styleguide, take care to maintain the existing coding style and please do follow <a href="https://github.com/rwldrn/idiomatic.js">idiomatic.js</a>.</li>
+                <li>Add unit tests for any new or changed functionality.</li>
+                <li>Lint and test your code using <a href="http://gruntjs.com">GruntJS</a>.</li>
+            </ol>
 
-      <p>Read more on Dexter's Github <a href="https://github.com/leobalter/DexterJS#contributing">Contributing</a> section.</p>
-    </div>
-  </footer>
+            <p>Read more on Dexter's Github <a href="https://github.com/leobalter/DexterJS/blob/master/docs/Contributing.md">Contributing</a> section.</p>
+        </div>
+    </footer>
 
-  <script src="js/jquery.min.js"></script>
-  <script async src="js/page.js?v=2"></script>
+    <script src="js/jquery.min.js"></script>
+    <script async src="js/page.js?v=2"></script>
 
-  <script type="text/javascript">
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '5006db6af5a1f5221500008b');
-    t.src = '//secure.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
-</script>
+    <script type="text/javascript">
+        var _gauges = _gauges || [];
+        (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '5006db6af5a1f5221500008b');
+            t.src = '//secure.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+        })();
+    </script>
 </body>
 </html>
